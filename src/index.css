@@ -68,8 +68,21 @@ body { margin: 0; min-width: 320px; min-height: 100vh; background: #0d0e14; }
 .site-shell[data-mode="light"] .experience-entry li::before {
   color: #D06A8E;
 }
+.site-shell[data-mode="light"] .project-points li::before {
+  color: #D06A8E;
+}
+.site-shell[data-mode="light"] .project-link {
+  color: #D06A8E;
+}
 .site-shell[data-mode="light"] .timeline li::marker,
 .site-shell[data-mode="light"] .achievement-list li::marker {
+  color: #D06A8E;
+}
+
+/* Fix: make the $ prompt symbol pop in light mode instead of blending
+   into the near-black command text (--blue resolves to #141414 in light
+   theme, same as --text, so .prompt was invisible without this). */
+.site-shell[data-mode="light"] .prompt {
   color: #D06A8E;
 }
 
@@ -186,13 +199,13 @@ body { margin: 0; min-width: 320px; min-height: 100vh; background: #0d0e14; }
 
 /* Projects */
 .project-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
-.project { min-height: 250px; padding: 19px 18px; border: 1px solid var(--border); background: var(--panel); }
+.project { display: flex; flex-direction: column; min-height: 250px; padding: 19px 18px; border: 1px solid var(--border); background: var(--panel); }
 .project-readme { color: var(--muted); font-size: 0.78rem; margin-bottom: 22px; }
 .project h3, .timeline h3 { color: var(--blue); font-size: 1rem; font-weight: 600; margin: 0 0 14px; }
 .tech { color: var(--green); font-size: 0.78rem; margin-bottom: 20px; }
-.project-points { margin: 0; padding-left: 19px; color: var(--muted); font-size: 0.76rem; line-height: 1.65; }
-.project-points li { padding-left: 4px; margin-bottom: 8px; }
-.project-points li::marker { color: var(--green); }
+.project-points { flex: 1; list-style: none; margin: 0; padding-left: 0; color: var(--muted); font-size: 0.76rem; line-height: 1.65; }
+.project-points li { position: relative; padding-left: 23px; margin-bottom: 9px; }
+.project-points li::before { content: '>'; position: absolute; left: 0; color: var(--green); font-weight: 600; }
 .project-link { display: block; margin-top: 16px; text-align: right; color: var(--blue); font-size: 0.78rem; text-decoration: none; transition: opacity 160ms ease; }
 .project-link:hover, .project-link:focus-visible { opacity: 0.8; outline: none; }
 

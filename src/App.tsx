@@ -73,11 +73,10 @@ function MeView() {
     <div className="me-layout">
       <div className="me-primary">
       <CommandBlock command="whoami">
-        <p>I'm a developer who likes building things I don't fully know how to build yet.
-These days, that means going deeper into backend- Python, APIs, databases, AI, and production systems.
-I tend to follow interesting problems further than necessary, usually learning something unexpected along the way.<br />
+        <p>Backend-leaning developer, currently deep in Python, APIs, and production systems. I like building things I don't fully know how to build yet-so interesting problems tend to take me further than planned - and usually teach me something unexpected along the way.
+          <br />
 <br />
-  Currently open to opportunities in software engineering, backend development, and AI.</p>
+  Open to roles in software engineering, backend development, and AI.</p>
       </CommandBlock>
       </div>
       <div className="me-secondary">
@@ -90,7 +89,7 @@ I tend to follow interesting problems further than necessary, usually learning s
           <div><dt>frameworks</dt><dd>React.js · Next.js · FastAPI · REST APIs</dd></div>
           <div><dt>cloud/tools</dt><dd>Azure · AWS · Firebase ·  Linux · Docker · Git · GitHub</dd></div>
           <div><dt>databases</dt><dd>PostgreSQL · MySQL · MongoDB · Redis </dd></div>
-          <div><dt>core</dt><dd>OOPs · DSA · DBMS · OS · System Design</dd></div>
+          <div><dt>core</dt><dd>OOP · DSA · DBMS · OS · System Design</dd></div>
         </dl>
         <p className="success-line">→ comfortable crossing the stack when the problem demands it.</p>
       </CommandBlock>
@@ -101,22 +100,22 @@ I tend to follow interesting problems further than necessary, usually learning s
 
 const projects = [
   {
-    name: 'Quizzo',
-    tech: 'HTML · CSS · JavaScript',
-    link: '#',
-    points: ['Web-based quiz app for creating and taking quizzes', 'Instantly displays results after submission', 'Responsive interface deployed on Vercel'],
+    name: 'Linksy',
+    tech: 'FastAPI · SQLAlchemy · React.js ',
+    link: 'https://github.com/aditi-tyagi02/Linksy',
+    points: ['Shortens long URLs with custom, memorable aliases and live availability checks', 'Generates a downloadable QR code and tracks click count for every link', 'Full-stack build with client/server validation and a real-SaaS-style dark UI'],
   },
   {
     name: 'MoodMate',
-    tech: 'React · TypeScript',
+    tech: ' TypeScript  · Firebase · LLM API',
     link: '#',
     points: ['Detects user mood and suggests personalized activities', 'Includes mood tracking and guided mindfulness exercises', 'Delivers real-time wellbeing recommendations'],
   },
   {
-    name: 'EzNotes',
-    tech: 'HTML · CSS · JavaScript · Bootstrap',
+    name: 'AI Text Summarizer',
+    tech: 'Python · FastAPI · React.js · LLM API',
     link: '#',
-    points: ['Study materials and exam tips for high school students', 'Organized content for quick revision and reference', 'Built with a responsive Bootstrap front end'],
+    points: ['Summarizes long-form text into concise, context-aware summaries using an LLM', 'RESTful FastAPI backend handling text processing, model requests, and validation', 'Interactive React interface for submitting content and visualizing results'],
   },
 ];
 
@@ -148,25 +147,24 @@ function ExperienceView() {
             <h3>Graduate Engineer Trainee</h3>
             <div className="experience-company">HCLTech, Noida</div>
             <ul>
-              <li>Operated and supported production cloud infrastructure across Azure and AWS, managing IaaS and PaaS workloads for enterprise-scale applications</li>
-              <li>Diagnosed and resolved high-priority incidents across Linux and Windows systems, performing root-cause analysis to restore availability and performance</li>
-              <li>Managed cloud resources including VMs, networking, storage, and access controls while ensuring reliability, security, and SLA compliance</li>
-              <li>Collaborated with cross-functional teams to stabilize systems, reduce recurring issues, and improve operational efficiency in live environments</li>
+              <li>Automated provisioning of Azure and AWS compute, networking, and storage resources using scripting, reducing manual setup time by 30% across 10+ enterprise environments</li>
+              <li>Engineered reusable remediation scripts and automated monitoring checks, eliminating 8+ hours per week of manual operational work</li>
+              <li>Collaborated with cross-functional engineering teams to resolve recurring infrastructure issues, reducing repeat incident volume by 20% over 3 months</li>
             </ul>
           </article>
           <article className="experience-entry">
             <div className="experience-period">[Oct 2024-Dec 2024]</div>
             <h3>Front-End Developer Intern</h3>
-            <div className="experience-company">Agniverse</div>
+            <div className="experience-company">Agniverse, Delhi</div>
             <ul>
-              <li>Developed responsive and dynamic web applications using React.js, HTML, CSS, and JavaScript, improving user engagement and performance</li>
-              <li>Integrated Firebase for authentication and real-time data management, enabling seamless user experiences</li>
-              <li>Collaborated with cross-functional teams to implement client requirements and improve product functionality</li>
+              <li>Built and shipped full-stack web features end-to-end, developing responsive interfaces with React.js and JavaScript and integrating Firebase for authentication, data persistence, and real-time functionality</li>
+              <li>Designed and developed reusable, component-based UI architecture using React.js, HTML, and CSS, integrating application state with Firebase for dynamic, real-time user experiences</li>
+              <li>Implemented authentication and data-management workflows, structuring application data and access flows to support secure, scalable functionality</li>
             </ul>
           </article>
         </div>
       </CommandBlock>
-      <CommandBlock command="education">
+      <CommandBlock command="cat education.log">
         <div className="education-list"><p><strong>Bachelor of Technology, Computer Science and Engineering (AIML)</strong><br /><span>ABES Engineering College, Ghaziabad · 2021 - 2025</span></p><p><strong>High School Diploma</strong><br /><span>Delhi Public School Ghaziabad · 2018 - 2021</span></p></div>
       </CommandBlock>
     </>
@@ -255,7 +253,7 @@ function App() {
           </main>
           <footer className="site-footer">
             <span className="footer-command"><span className="prompt">$</span> find me</span>
-            <span className="footer-links"><a href="https://github.com/aditi-tyagi02">[ github ]</a><a href="#https://in.linkedin.com/in/aditi-tyagi02">[ linkedin ]</a><a href="https://leetcode.com/Bytebarde55/">[ leetcode ]</a><a href={`mailto:${profile.email}`}>[ email ]</a><a href="#resume">[ resume ]</a></span>
+            <span className="footer-links"><a href="https://github.com/aditi-tyagi02">[ github ]</a><a href="https://in.linkedin.com/in/aditi-tyagi02">[ linkedin ]</a><a href="https://leetcode.com/Bytebarde55/">[ leetcode ]</a><a href={`mailto:${profile.email}`}>[ email ]</a><a href="#resume">[ resume ]</a></span>
           </footer>
         </div>
       </div>
