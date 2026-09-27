@@ -248,11 +248,25 @@ ul { margin: 0; padding-left: 19px; }
 .json-key { color: var(--blue); }
 .json-string { color: var(--green); }
 .json-note { color: var(--muted); }
-.site-shell[data-mode="light"] .achievement-json { background: #141414; color: #F3EEE7; border-color: #141414; }
-.site-shell[data-mode="light"] .json-punctuation,
-.site-shell[data-mode="light"] .json-key { color: #8CA9E8; }
-.site-shell[data-mode="light"] .json-string { color: #8FD4A0; }
-.site-shell[data-mode="light"] .json-note { color: #B8ADA3; }
+
+/* Achievements — light mode (match projects: black bg, beige text, pink accents) */
+.site-shell[data-mode="light"] .achievement-json {
+  background: #141414;
+  color: #F3EEE7;
+  border-color: #141414;
+}
+.site-shell[data-mode="light"] .json-key {
+  color: #D06A8E;
+}
+.site-shell[data-mode="light"] .json-string {
+  color: #F3EEE7;
+}
+.site-shell[data-mode="light"] .json-punctuation {
+  color: #B8ADA3;
+}
+.site-shell[data-mode="light"] .json-note {
+  color: #B8ADA3;
+}
 
 /* Footer */
 .site-footer { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 20px; padding-top: 22px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.72rem; }
