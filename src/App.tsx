@@ -253,7 +253,7 @@ function App() {
           </main>
           <footer className="site-footer">
             <span className="footer-command"><span className="prompt">$</span> find me</span>
-            <span className="footer-links"><a href="https://github.com/aditi-tyagi02">[ github ]</a><a href="https://in.linkedin.com/in/aditi-tyagi02">[ linkedin ]</a><a href="https://leetcode.com/Bytebarde55/">[ leetcode ]</a><a href={`mailto:${profile.email}`}>[ email ]</a><a href="#resume">[ resume ]</a></span>
+            <span className="footer-links"><a href="https://github.com/aditi-tyagi02">[ github ]</a><a href="https://in.linkedin.com/in/aditi-tyagi02">[ linkedin ]</a><a href="https://leetcode.com/Bytebarde55/">[ leetcode ]</a><a href={`mailto:${profile.email}`}>[ email ]</a><a href="https://drive.google.com/file/d/15Ft0aznOuxIetWGJTY1Y8xfC8YX_TePv/view?usp=sharing">[ resume ]</a></span>
           </footer>
         </div>
       </div>
