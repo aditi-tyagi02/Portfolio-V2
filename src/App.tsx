@@ -162,6 +162,16 @@ function ExperienceView() {
               <li>Implemented authentication and data-management workflows, structuring application data and access flows to support secure, scalable functionality</li>
             </ul>
           </article>
+          <article className="experience-entry">
+  <div className="experience-period">[Jan 2023-Jan 2024]</div>
+  <h3>Technical Content Writer</h3>
+  <div className="experience-company">GeeksforGeeks, Remote</div>
+  <ul>
+    <li>Authored 70+ technical articles covering Data Structures & Algorithms, Python, JavaScript, web development, and core programming concepts</li>
+    <li>Researched and explained DSA concepts, algorithms, and problem-solving techniques with step-by-step approaches, complexity analysis, and implementation examples</li>
+    <li>Translated complex software engineering concepts into structured, developer-focused explanations for a large programming community</li>
+  </ul>
+</article>
         </div>
       </CommandBlock>
       <CommandBlock command="cat education.log">
