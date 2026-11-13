@@ -115,11 +115,10 @@ const projects = [
     name: 'AI Text Summarizer',
     tech: 'Python · Streamlit · LLM API',
     link: 'https://github.com/aditi-tyagi02/SummarAI',
-    points: [
-  'Summarizes pasted text and uploaded PDFs into concise summaries using Google Gemini, with selectable format (paragraph or bullet points), length and output language across six languages',
-  'Built the Python backend logic for PDF text extraction, prompt construction, input validation, and streaming model responses so summaries appear in real time',
-  'Designed a responsive Streamlit interface with custom CSS, live word-count and reduction metrics, and one-click copy and download of results',
-  'Deployed on Streamlit Community Cloud with secure API key management and session state handling to keep results across page reruns',
+    points:[
+  'Summarizes long-form text and PDFs into concise, language-aware summaries using LLM API',
+  'Python backend handling PDF parsing, prompt building, input validation, and streaming model requests',
+  'Interactive Streamlit interface for submitting content, tuning summary options, and visualizing results',
 ],
   }
 ];
